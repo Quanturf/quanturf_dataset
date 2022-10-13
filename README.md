@@ -26,7 +26,7 @@ The data covered in this documentation include:
 
 Financial Data types covered:
 -------------------------------------------------
-
+See detailed documentation [here](https://quanturf-dataset-alpha.readthedocs.io/en/latest/#financial-datasets-summary-by-source-and-types/).
 -   Equities
 -   FixedIncome
 -   FX
