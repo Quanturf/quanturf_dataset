@@ -8,7 +8,7 @@ By searching a ticker and going to ‘historical data’, you can get historical
 You can also download a .csv. Unfortunately, there is no API access but its a great resource nonetheless.
 
 .. note::
-    Refer to `Stooq Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/stooq.ipynb>`_ for more details.
+    Refer to `Stooq Jupyter Notebook <https://github.com/Quanturf/quanturf_dataset/blob/main/Docs/JupyterNotebooks/stooq.ipynb>`_ for more details.
 
 Table of Contents
 -----------------
@@ -49,7 +49,7 @@ Historical Price and Volume for 1 Stock
 Gets the OHLCV for the given ``ticker``.
 
 .. code:: ipython3
-    
+
     # adjust the variables below
     ticker = 'AAPL'
 

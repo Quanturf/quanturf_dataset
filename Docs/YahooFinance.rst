@@ -6,7 +6,7 @@ Yahoo Finance
 Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
 
 .. note::
-    Refer to `Yahoo Finance Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/yfinance.ipynb>`_ for more details.
+    Refer to `Yahoo Finance Jupyter Notebook <https://github.com/Quanturf/quanturf_dataset/blob/main/Docs/JupyterNotebooks/YahooFinance.ipynb>`_ for more details.
 
 
 Table of Contents
@@ -57,7 +57,7 @@ Import all necessary libraries:
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Outputs a Pandas DataFrame containing the values for 
+Outputs a Pandas DataFrame containing the values for
 open, high, low, close, and volume (OHLCV) of an equity.
 
 .. code:: ipython3
@@ -105,7 +105,7 @@ Alternative, static time periods:
 Frequency Setting
 -----------------
 
-Outputs a similar Pandas DataFrame that breaks the OHLCV down into smaller 
+Outputs a similar Pandas DataFrame that breaks the OHLCV down into smaller
 minute or hour intervals.
 
 
@@ -133,7 +133,7 @@ Gets the quarterly dividend data for the given ``ticker``.
     AAPL = yf.download(ticker, period="10y", actions = True)
     AAPL.head()
 
-You can use Pandas to narrow the data down by date or other 
+You can use Pandas to narrow the data down by date or other
 features, such as stock splits.
 
 .. code:: ipython3
@@ -259,7 +259,7 @@ Getting treasury rates with the ``download`` function.
 Stock Fundamentals
 ------------------
 
-To get fundamentals, use the ``Ticker`` object to instantiate new 
+To get fundamentals, use the ``Ticker`` object to instantiate new
 values.
 
 .. code:: ipython3
@@ -278,7 +278,7 @@ Simply list the current ticker
     'DIS'
 
 Outputs 150+ features on the ticker, including:
-``sector``, ``website``, ``ebitda``, ``targetLowPrice``, ``currentRatio``, 
+``sector``, ``website``, ``ebitda``, ``targetLowPrice``, ``currentRatio``,
 ``currentPrice``, ``debtToEquity``, and ``totalRevenue``.
 
 .. code:: ipython3
@@ -331,7 +331,7 @@ Gets the statement of cash flows.
 Put Call Options
 ----------------
 
-.. note:: 
+.. note::
     This output does not default to a Pandas DataFrame.
 
 Designate your desired ticker.
@@ -341,7 +341,7 @@ Designate your desired ticker.
     ticker = "DIS"
     dis = yf.Ticker(ticker)
 
-Gets the ``call``, ``contractSymbol``, ``lastTradeDate``, ``strike``, 
+Gets the ``call``, ``contractSymbol``, ``lastTradeDate``, ``strike``,
 ``lastPrice``, ``bid``, and ``ask``.
 
 .. code:: ipython3

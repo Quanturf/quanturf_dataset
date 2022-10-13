@@ -1,8 +1,8 @@
-FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
+Quanturf's Datasets! - Free Financial data for building Financial models
 ==========================================================================================
 
 This documentation contains the information about the **Free financial dataset** for thousands
-of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building models on `FinAILab <http://finailab.com/>`_.
+of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building models on `Quanturf <http://quanturf.com/>`_.
 
 This doumentation shows you how to get massive amounts of Financial Data and explains how to **install required Libraries** and how to **download/import the data** with few lines of Python Code.
 
@@ -56,7 +56,7 @@ Financial Datasets - Summary by source and types:
    Docs/Macroeconomic
    Docs/News
    Docs/AlternativeData
-  
+
 
 
 Contributing
@@ -66,7 +66,7 @@ To any interested in making the FinAIML better, there are still some improvement
 that need to be done.
 A full TODO list is available in the `roadmap <https://github.com/users/tatsath/projects/4>`_.
 
-If you want to contribute, please go through `CONTRIBUTING.md <https://github.com/tatsath/FinAILabDatasets/blob/master/CONTRIBUTING.md>`_ first.
+If you want to contribute, please go through `CONTRIBUTING.md <https://github.com/Quanturf/quanturf_dataset/blob/master/CONTRIBUTING.md>`_ first.
 
 Indices and tables
 -------------------

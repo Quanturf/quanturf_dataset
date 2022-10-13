@@ -7,31 +7,14 @@ Quandl has many data sources to get different types of stock market data. Howeve
 
 Quandl also provides paid data source of minute and lower frequencies.
 
-To get the stock market data, you need to first install the quandl module if it is not already installed using the pip command as shown below.
-
-You need to get your own API Key from quandl to get the stock market data using the below code. If you are facing issue in getting the API key then you can refer to this link.
-
-After you get your key, assign the variable QUANDL_API_KEY with that key. Then set the start date, end date and the ticker of the asset whose stock market data you want to fetch.
-
-The quandl get method takes this stock market data as input and returns the open, high, low, close, volume, adjusted values and other information.
-
-
-To do- Add details from following sites
-- https://blog.quantinsti.com/stock-market-data-analysis-python/
-- https://towardsdatascience.com/python-i-have-tested-quandl-api-and-how-to-get-real-estates-economics-data-in-one-line-of-code-a13806ca9bb
-- https://medium.datadriveninvestor.com/financial-data-431b75975bb#cc62
-- Add more description into each of the component.
-- Add the details about how to see the list of all tickers available for download in each section.
-- Provide a link to the jupyter notebook for this.
-
 .. note::
-    Refer to `Quandl Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/quandl.ipynb>`_ for more details.
+    Refer to `Quandl Jupyter Notebook <https://github.com/Quanturf/quanturf_dataset/blob/main/Docs/JupyterNotebooks/quandl.ipynb>`_ for more details.
 
 Table of Contents
 -----------------
 
 - `Installation`_
-- `Usage`_ 
+- `Usage`_
 - `Historical Price and Volume for 1 Stock`_
 - `Adding Time Periods`_
 - `Dividends`_
@@ -57,8 +40,8 @@ Usage
     Before working with this API, you will need to obtain
     a key from `Nasdaq Data Link <https://data.nasdaq.com/users/login>`_
 
-Quandl is the library used for accessing the `Nasdaq Data Link <https://data.nasdaq.com/search>`_ 
-database, so all of the queries below follow a similar pattern that can be reproduced with 
+Quandl is the library used for accessing the `Nasdaq Data Link <https://data.nasdaq.com/search>`_
+database, so all of the queries below follow a similar pattern that can be reproduced with
 any of the ID codes from the database.
 
 Import all necessary libraries:
@@ -66,8 +49,8 @@ Import all necessary libraries:
 .. code:: ipython3
 
     import quandl
-    import pandas as pd 
-    import numpy as np 
+    import pandas as pd
+    import numpy as np
     from datetime import datetime
     from matplotlib import pyplot as plt
     import seaborn as sns
@@ -84,7 +67,7 @@ Import all necessary libraries:
         raise Exception("Please provide a valid Quandl API key!")
 
 .. code:: ipython3
-    
+
     quandl.ApiConfig.api_key = QUANDL_API_KEY
 
 Historical Price and Volume for 1 Stock
@@ -100,7 +83,7 @@ Outputs the OHLCV, as well as dividend data and adjusted OHLCV for the given ``t
 
     # Set the ticker name
     ticker = 'AMZN'
-                
+
 .. code:: ipython3
 
     data = quandl.get('WIKI/'+ticker)
@@ -179,7 +162,6 @@ Futures and Options
 Outputs various long, short, and spread data.
 
 .. code:: ipython3
-    
+
     fo = quandl.get('CFTC/1170E1_FO_ALL', start_date='2015-04-01', end_date='2021-10-01')
     fo
-
