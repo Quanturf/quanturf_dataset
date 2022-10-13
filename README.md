@@ -1,8 +1,9 @@
 Quanturf's Datasets - Free Financial data for building Financial models
 ==========================================================================================
 
-This documentation contains the information about the **Free financial dataset** for thousands
-of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building algo-trading models on [Quanturf](http://quanturf.com/).
+This repository contains the information about the **Free financial dataset** for thousands of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building algo-trading models on [Quanturf](http://quanturf.com/).
+
+Refer to the detailed documentation [here](https://quanturf-dataset-alpha.readthedocs.io/en/latest/)
 
 
 This doumentation shows you how to get massive amounts of Financial Data and explains how to **install required Libraries** and how to **download/import the data** with few lines of Python Code.
